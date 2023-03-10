@@ -1,11 +1,11 @@
-<Doctype html><!-- Este doctype é do tipo HTML5 -->
+<Doctype html><!-- Este doctype é do tipo HTML5/isso é uma instrução -->
 <!-- Isso é um comentario em HTML -->
 <!-- O Doctype é um DTD que é responsavel por dizer ao navegador qual é a versão do HTML que está sendo carregado -->
 
 <html lang="pt-br">
 
 	<head> <!-- configuração do html -->
-		<meta charset="UTF-8"> <!-- atributos de configuração, esse é responsavel pelo mapa de caracteres do documentos -->
+		<meta charset="UTF-8"> <!-- atributos de configuração, esse é responsavel pelo mapa de caracteres do documentos -UTF-8 caracteres acentuados -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsavel pela responsividade do conteudo -->
 		<title>Exemplo HTML</title> <!-- titulo da aba -->
 	</head>
@@ -13,7 +13,37 @@
 	<body>
 		<!-- É nessa área que são criadas todas as TAGS HTML (dentro do BODY) -->
 		
+		<div><!--tag curinga, quase todas as outras tags podem ser colocadas entre, tag de bloco-->
+			<header><!--tag de bloco - tag semantica(=q faz sentido) - cabeçalho-->
+				<h1>Olá mundo</h1><!--tag e titulo - do h1 a h6-->
+				<nav><!--tag semanica, agrupar links q fazem direcionamento-->
+					<ul><!--tag unordered list, dentro diretamente só podemos colocar os list-itens (li - uma tag tb)-->
+						<!--apos ul só pode colocar li-->
+						<li>Java</li>
+						<li>javascript</li>
+						<li>Python</li>
+						<li>Ruby</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section>
+				<div>
+					<p><!--não pode conter outros elementos de bloco-->
+						<!--tag de bloco, ocupa a linha inteira-->
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, corrupti facere distinctio quos odio dolore magnam delectus dignissimos accusamus, veritatis ratione sunt laudantium unde. Expedita sint quasi rem laboriosam unde?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod quia quasi vero eum voluptatem consequuntur nobis, blanditiis cupiditate quisquam, sunt explicabo ea facilis! Fuga ut dignissimos tempora voluptatem illum!
+					</p>
+				</div>
+			</section>
 		
-	</body>
+		</div>
+		
+	</body> 
 	
 </hmtl>
+
+
+
